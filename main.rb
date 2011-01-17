@@ -4,7 +4,7 @@ require 'oauth2'
 require 'json'
 require 'net/https'
 
-# set on https://foursquare.com/oauth/
+# as found on https://foursquare.com/oauth/
 CLIENT_ID = your_client_id
 CLIENT_SECRET = your_client_secret
 CALLBACK_URL = '/auth/foursquare/callback'
