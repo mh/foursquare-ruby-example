@@ -4,9 +4,10 @@ require 'oauth2'
 require 'json'
 require 'net/https'
 
+# set on https://foursquare.com/oauth/
 CLIENT_ID = your_client_secret 
 CLIENT_SECRET = your_client_secret
-CALLBACK_URL = '/auth/foursquare/callback' # set on https://foursquare.com/oauth/
+CALLBACK_URL = '/auth/foursquare/callback'
 
 def client
     OAuth2::Client.new(CLIENT_ID, CLIENT_SECRET, 
