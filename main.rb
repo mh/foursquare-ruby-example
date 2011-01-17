@@ -14,7 +14,7 @@ def client
       :site => ' http://foursquare.com/v2/',
       :request_token_path => "/oauth2/request_token",
       :access_token_path  => "/oauth2/access_token",
-      :authorize_path     => "/oauth2/authorize?response_type=code",
+      :authorize_path     => "/oauth2/authenticate?response_type=code",
       :parse_json => true
     )
 end
