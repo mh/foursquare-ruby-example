@@ -1,6 +1,6 @@
 == foursquare APIv2 Sinatra Example
 
-This shows how easy it is to build an application using the OAuth2 gem and v2 of the foursquare API.
+This shows how easy it is to use Foursquare APIv2 via the OAuth2 gem.
 
 == code
     require 'rubygems'
