@@ -7,7 +7,7 @@ require 'net/https'
 # as found on https://foursquare.com/oauth/
 CLIENT_ID = your_client_id
 CLIENT_SECRET = your_client_secret
-CALLBACK_URL = '/auth/foursquare/callback'
+CALLBACK_PATH = '/auth/foursquare/callback'
 
 def client
     OAuth2::Client.new(CLIENT_ID, CLIENT_SECRET, 
@@ -41,7 +41,7 @@ end
 
 def redirect_uri()
   uri = URI.parse(request.url)
-  uri.path = CALLBACK_URL
+  uri.path = CALLBACK_PATH
   uri.query = nil
   uri.to_s
 end
