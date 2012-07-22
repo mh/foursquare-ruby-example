@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'sinatra'
+gem 'oauth2', '=0.4.1'
 require 'oauth2'
 require 'json'
 require 'net/https'
