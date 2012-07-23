@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'sinatra'
+gem 'oauth2', '=0.4.1'
 require 'oauth2'
 require 'json'
 require 'net/https'
@@ -11,7 +12,7 @@ CALLBACK_PATH = '/auth/foursquare/callback'
 
 def client
     OAuth2::Client.new(CLIENT_ID, CLIENT_SECRET, 
-      :site => ' http://foursquare.com/v2/',
+      :site => 'http://foursquare.com/v2/',
       :request_token_path => "/oauth2/request_token",
       :access_token_path  => "/oauth2/access_token",
       :authorize_path     => "/oauth2/authenticate?response_type=code",
